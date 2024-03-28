@@ -1,0 +1,14 @@
+{
+    "name": "fishpig/magento2-calm-log",
+    "description": "Stops some systemm.log messages being recorded.",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "FishPig\\CalmLog\\": ""
+        }
+    },
+    "version": "1.0.0"
+}
