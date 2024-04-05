@@ -11,4 +11,10 @@
             <argument name="logger" xsi:type="object">FishPig\CalmLog\App\Logger\SilencerProxy</argument>
         </arguments>
     </type>
+    <type name="Magento\Framework\Interception\PluginListGenerator">
+        <arguments>
+            <argument name="logger" xsi:type="object">FishPig\CalmLog\App\Logger\SilencerProxy</argument>
+        </arguments>
+    </type>
+    <!--/* @ToDo: Create virtualtype of logger and inject for each class. Pass strings via XML*/-->
 </config>

@@ -31,6 +31,8 @@ class SilencerProxy extends \Magento\Framework\Logger\LoggerProxy
             return true;
         } elseif (strpos($message, ' was removed') !== false) {
             return true;
+        } elseif (strpos($message, 'Reference to undeclared plugin with name') === 0) {
+            return true;
         }
 
         return false;
